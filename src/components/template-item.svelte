@@ -90,6 +90,12 @@
         color: var(--b3-theme-primary);
     }
 
+    // 移动端不加载 base.scss，toolbar__item 的图标尺寸会退化为 svg 默认尺寸（巨大）
+    .row1 .toolbar__item svg {
+        width: 15.5px;
+        height: 15.5px;
+    }
+
     .flex {
         display: flex;
     }
